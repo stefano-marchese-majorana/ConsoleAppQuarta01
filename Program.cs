@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Threading;
 
 // (2 * 6) + (1 + 4) * (5 -2)
@@ -67,11 +67,11 @@ namespace ConsoleAppThread30
             th2.Start();
             th3.Start();
 
-            th2.Join();
-            th3.Join();
+            // th2.Join();
+            // th3.Join();
             MyData.Result = MyData.B * MyData.C;
 
-            th1.Join();
+            // th1.Join();
             MyData.Result += MyData.A;
 
             Console.WriteLine($"=== Result {MyData.Result} ===");
